@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background-color: #b0b8e6;
+}
+
+nav {
+  background-color: #5179e7;
+  padding: 20px;
+  width: 100%;
+  bottom: auto;
+  position: relative;
+  display: inline-block;
+}
+
+nav a {
+  list-style: none;
+  bottom: 0;
+  padding: 30px;
+  margin: 0 15px;
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+
