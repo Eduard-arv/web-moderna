@@ -15,6 +15,28 @@ En “La Web Moderna” podrás leer los conceptos clave que todo Desarrollador 
 ---
 ## eslintrc
 
+```
+{
+    "env": {
+     "browser": true,
+     "es2021": true
+    },
+    "extends": ["eslint:recommended"],
+    "parserOptions": {
+     "ecmaVersion": "latest",
+     "sourceType": "module"
+    },
+    "rules": {
+     "indent": ["error", 2],
+     "linebreak-style": ["error", "unix"],
+     "quotes": ["error", "single"],
+     "semi": ["error", "always"],
+     "no-unused-vars": "warn",
+     "no-console": "warn"
+    }
+}
+```
+
 Este código es un archivo de configuración para ESLint, una herramienta de linting de JavaScript. Acá la explicación de cada línea de código:
 
 1. `env`:
