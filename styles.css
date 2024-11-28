@@ -18,7 +18,6 @@ nav {
   z-index: 1000;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   position: fixed;
   top: 0;
   left: 0;
@@ -27,8 +26,8 @@ nav {
 nav a {
   list-style: none;
   bottom: 0;
-  padding: 30px;
-  margin-top: 5px;
+  padding: 10px;
+  margin-top: 0px;
   text-decoration: none;
   color: aliceblue;
   font-weight: bold;
@@ -163,10 +162,7 @@ p {
     flex-wrap: wrap;
   }  */
   
-  .button {
-      width: 10%;
-      padding: 5px;
-  }
+  
 
 }
 
