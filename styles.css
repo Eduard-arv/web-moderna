@@ -11,7 +11,6 @@ body {
 
 nav {
   background: linear-gradient(45deg, #5179e7, #042429);
-  /* background-color: #5179e7; */
   padding: 20px;
   width: 100%;
   height: 10vh;
@@ -43,14 +42,23 @@ nav a:hover {
 
 main {
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap; 
   position: relative; 
   align-items: center;
   justify-content: center;
   height: 90vh;
   margin-top: auto;
-  background-color: #c3c7d1;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100px;
+  height: 350px;
+  padding: auto;
+  gap: 10px;
 }
 
 section {
@@ -59,7 +67,8 @@ section {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  /* text-align: center; */
+  text-align: center;
+
 }
 
 .container {
@@ -71,19 +80,18 @@ section {
   border-radius: 50px; 
   border: solid; 
   padding: 30px;
-  background-color: #32aab9;
+  background-color: #ffffff;
   border-color: #042429;
   box-shadow:  0 2px 3px;
-  
+  gap: 10px;
+
 }
 
 h1 {
   text-align: center;
   font-size: 40px;
   font-weight: bold;
-  display: flex;
-  color: black;
-  margin-top: 60px;
+  color: black; 
 }
 
 h2 {
@@ -95,6 +103,7 @@ h2 {
 }
 
 p {
+  overflow-y: scroll;
   text-align: center;
   display: flex;
   font-size: 18px;
@@ -103,9 +112,10 @@ p {
 .button {
   display: block;
   justify-content: center;
+  align-items: center;
   text-align: center;
   margin-top: 5px;
-  margin-left: 45%;
+  margin-left: 40%;
   width: 110px;
   height: 35px;
   padding: 5px 10px;
@@ -120,7 +130,7 @@ p {
   background-color: #011b30; /* Change background color on hover */
 }
 
-@media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 600px) {
   
   nav {
     top: auto;
@@ -128,6 +138,50 @@ p {
   }  
 
   body {
-  background-color: #c68edb;
+  background-color: #4cc9c9;
+  margin: 0;
+  padding: 10px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 10px;;
+  }
+  p {
+    font-size: 14px;
+  }
+
+  /* .container {
+    width: 100%; 
+    padding: 5px;
+    margin: 10px;
+  }
+
+  .cards {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }  */
+  
+  .button {
+      width: 10%;
+      padding: 5px;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  body {
+      padding: 5px;
+  }
+
+  h1 {
+      font-size: 20px;
+  }
+
+  p {
+      font-size: 14px;
   }
 }
